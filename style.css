@@ -34,7 +34,7 @@ table {
 td:first-child {
   background-color: #d6e0e6;
   padding: 20px;
-  border-radius: 10px;
+
 }
 
 td:nth-child(2), td:nth-child(3) {
