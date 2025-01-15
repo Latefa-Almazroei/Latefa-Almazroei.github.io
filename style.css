@@ -25,21 +25,18 @@ header {
   margin-bottom: 40px;
 }
 
-/* Profile Picture and Contact Info */
-td img {
-  border-radius: 50%;
-}
 
-/* Table layout for separating profile and content */
+
+
 table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 20px;
 }
 
-/* First Column (Profile Picture and Contact Info) */
+
 td:first-child {
-  background-color: #d6e0e6; /* Slightly darker background for profile and contact info */
+  background-color: #d6e0e6; 
   padding: 20px;
   border-radius: 10px;
 }
@@ -54,7 +51,7 @@ td:nth-child(2), td:nth-child(3) {
 /* About Me Section */
 #about-me {
   background-color: #e0f1fa; /* Lighter background for content */
-  border: 2px solid #c1d3e2; /* Light border to separate the section */
+
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
