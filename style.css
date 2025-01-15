@@ -1,31 +1,28 @@
-/* Basic reset for padding and margin */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and overall background color */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8; /* Light background color */
-  color: #333; /* Dark text color for readability */
+  background-color: #f0f4f8;
+  color: #333;
   padding: 20px;
 }
 
-/* Container for centering content */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Header Section */
 header {
   text-align: center;
   margin-bottom: 40px;
 }
-
-
 
 
 table {
@@ -34,59 +31,34 @@ table {
   border-spacing: 20px;
 }
 
-
 td:first-child {
-  background-color: #d6e0e6; 
+  background-color: #d6e0e6;
   padding: 20px;
   border-radius: 10px;
 }
 
-
 td:nth-child(2), td:nth-child(3) {
-  background-color: #c1d3e2; /* Darker color for the main content area */
+  background-color: #c1d3e2;
   padding: 20px;
-
+  border-left: 2px solid #c1d3e2;
 }
 
-
-#about-me {
-  background-color: #e0f1fa; 
-
+#about-me, section {
+  background-color: #f6f9fc;
   padding: 15px;
   margin-bottom: 20px;
 }
-
-
-section {
-  background-color: #f6f9fc; 
-  
-  padding: 15px;
-  margin-bottom: 20px;
- 
-}
-
 
 h2, h3 {
-  color: #335c7f; 
+  color: #335c7f;
   margin-bottom: 10px;
 }
 
-
 ul {
-  list-style: none;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 ul li {
   margin-bottom: 10px;
 }
-
-
-td:nth-child(2), td:nth-child(3) {
-  border-left: 2px solid #c1d3e2; 
-}
-
-
-section:last-of-type {
-  margin-bottom: 0;
-}
-
