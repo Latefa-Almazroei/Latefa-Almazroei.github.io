@@ -1,1 +1,106 @@
+/* Basic reset for padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  padding: 20px;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Profile Picture and Contact Info */
+td img {
+  border-radius: 50%;
+}
+
+/* Table layout for separating profile and content */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+/* First Column (Profile Picture and Contact Info) */
+td:first-child {
+  background-color: #d6e0e6; /* Slightly darker background for profile and contact info */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Second Column (About Me, Education, Skills, Projects, Certifications) */
+td:nth-child(2), td:nth-child(3) {
+  background-color: #c1d3e2; /* Darker color for the main content area */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* About Me Section */
+#about-me {
+  background-color: #e0f1fa; /* Lighter background for content */
+  border: 2px solid #c1d3e2; /* Light border to separate the section */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Education, Skills, Projects, Certifications (similar style) */
+section {
+  background-color: #f6f9fc; /* Lighter background for the info within each section */
+  border: 2px solid #e0f1fa; /* Border for section */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Headers inside each section */
+h2, h3 {
+  color: #335c7f; /* Color for section headers */
+  margin-bottom: 10px;
+}
+
+/* Styling for unordered list items inside each section */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Add a border between the sections (Education, Skills, Projects, Certifications) */
+td:nth-child(2), td:nth-child(3) {
+  border-left: 2px solid #c1d3e2; /* Border separating the columns */
+}
+
+/* Styling for links (e.g., CV, GitHub, LinkedIn) */
+a {
+  text-decoration: none;
+  color: #4d7c99;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Margin for the Last Section */
+section:last-of-type {
+  margin-bottom: 0;
+}
 
