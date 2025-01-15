@@ -41,38 +41,37 @@ td:first-child {
   border-radius: 10px;
 }
 
-/* Second Column (About Me, Education, Skills, Projects, Certifications) */
+
 td:nth-child(2), td:nth-child(3) {
   background-color: #c1d3e2; /* Darker color for the main content area */
   padding: 20px;
-  border-radius: 10px;
+
 }
 
-/* About Me Section */
+
 #about-me {
-  background-color: #e0f1fa; /* Lighter background for content */
+  background-color: #e0f1fa; 
 
   padding: 15px;
-  border-radius: 5px;
   margin-bottom: 20px;
 }
 
-/* Education, Skills, Projects, Certifications (similar style) */
+
 section {
-  background-color: #f6f9fc; /* Lighter background for the info within each section */
-  border: 2px solid #e0f1fa; /* Border for section */
+  background-color: #f6f9fc; 
+  
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: 5px;
+ 
 }
 
-/* Headers inside each section */
+
 h2, h3 {
-  color: #335c7f; /* Color for section headers */
+  color: #335c7f; 
   margin-bottom: 10px;
 }
 
-/* Styling for unordered list items inside each section */
+
 ul {
   list-style: none;
 }
@@ -81,22 +80,12 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Add a border between the sections (Education, Skills, Projects, Certifications) */
+
 td:nth-child(2), td:nth-child(3) {
-  border-left: 2px solid #c1d3e2; /* Border separating the columns */
+  border-left: 2px solid #c1d3e2; 
 }
 
-/* Styling for links (e.g., CV, GitHub, LinkedIn) */
-a {
-  text-decoration: none;
-  color: #4d7c99;
-}
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Bottom Margin for the Last Section */
 section:last-of-type {
   margin-bottom: 0;
 }
