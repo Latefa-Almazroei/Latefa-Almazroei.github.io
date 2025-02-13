@@ -4,7 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
-   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+           
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .profile {
+            width: 30%;
+            text-align: center;
+            background-color: #e0ecf8;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .profilepic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #26435c;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #4376b1;
+            transform: scale(1.1);
+        }
+
+        section {
+            background-color: #f6f9fc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2, h3 {
+            color: #205a8c;
+            margin-bottom: 10px;
+        }
+
+       
+        #contactform {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+           
+        }
+
+        #form label,
+        #form input,
+        #form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #a07575;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        #form button {
+            background-color: #335c7f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #form button:hover {
+            background-color: #233d5b;
+            transform: scale(1.1);
+        }
+
+        #formMes {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("form").addEventListener("submit", function (event) {
