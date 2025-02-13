@@ -5,7 +5,27 @@
     <meta name="name" content="latefa">
     <title>Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script >
+    window.onload = function() {
+    let greetingText = document.getElementById("greeting");
+    let hours = new Date().getHours();
+    if (hours < 12) {
+        greetingText.innerText = "Good morning! Welcome to my portfolio.";
+    } else if (hours < 18) {
+        greetingText.innerText = "Good afternoon! Welcome to my portfolio.";
+    } else {
+        greetingText.innerText = "Good evening! Welcome to my portfolio.";
+    }
+};
+
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("formMessage").innerText = "Message sent successfully!";
+    this.reset();
+});
+
+    </script>
 </head>
 <body>
 
