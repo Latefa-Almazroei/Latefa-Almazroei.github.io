@@ -3,120 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latefa Almazroei - Cybersecurity Portfolio">
-    <title>Latefa Almazroei</title>
+    <title>Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-      window.onload = function() {
-    let greetingText = document.getElementById("greeting");
-    let hours = new Date().getHours();
-    if (hours < 12) {
-        greetingText.innerText = "Good morning! Welcome to my portfolio.";
-    } else if (hours < 18) {
-        greetingText.innerText = "Good afternoon! Welcome to my portfolio.";
-    } else {
-        greetingText.innerText = "Good evening! Welcome to my portfolio.";
-    }
-};
-
-// Form Submission Handling
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    document.getElementById("formMessage").innerText = "Message sent successfully!";
-    this.reset();
-});
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Latefa Almazroei</h1>
-            <p id="greeting"></p> <!-- Greeting Message -->
-        </header>
 
-        <table>
-            <tr>
-                <td class="profile">
-                    <img src="https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAHaHa?rs=1&pid=ImgDetMain" alt="Profile Picture">
-                    <p>
-                        <b>Email:</b> 1093635@students.adu.ac.ae <br>
-                        <b>Tel:</b> (+971) 50 0000000 <br>
-                        <b>University:</b> <a href="https://www.adu.ac.ae/">Abu Dhabi University</a>
-                    </p>
-                    <p>
-                        <a href="github/assets/Sample CV for a Cybersecurity Specialist.pdf">View My CV</a><br><br>
-                        <a href="https://www.linkedin.com/" target="_blank">
-                            <img src="assets/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/">
-                            <img src="assets/github.png" alt="GitHub">
-                        </a>
-                    </p>
-                </td>
-                <td class="info">
-                    <section id="about-me">
-                        <h2>About Me</h2>
-                        <p>
-                            I am an ambitious undergraduate student majoring in Cybersecurity Engineering at Abu Dhabi University.
-                            My passion lies in protecting systems from cyber threats and learning about ethical hacking.
-                        </p>
-                    </section>
+  <div class="container">
+    <header>
+      <h1>My Cybersecurity Portfolio</h1>
+    </header>
 
-                    <section id="education">
-                        <h3>Education</h3>
-                        <ul>
-                            <li><b>Abu Dhabi University:</b> B.Sc. Cybersecurity Engineering, 2023 - Present</li>
-                            <li><b>High School:</b> Applied Technology High School, 2023</li>
-                        </ul>
-                    </section>
+    <table>
+      <tr>
+        <td class="profile">
+          <img src="https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAHaHa?rs=1&pid=ImgDetMain" 
+               alt="Profile Picture" class="profile-pic"><br><br>
+          <p>
+            <b>E-mail:</b> 1093635@students.adu.ac.ae <br>
+            <b>Tel:</b> (+971) 50 0000000 <br>
+            <b>University:</b> <a href="https://www.adu.ac.ae/" target="_blank">Abu Dhabi University</a><br>
+          </p>
+          <p>
+            <a href="github/assets/Sample CV for a Cybersecurity Specialist.pdf" class="btn">View My CV</a><br><br>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://github.com/" target="_blank">
+              <img src="assets/github.png" alt="GitHub" class="icon">
+            </a>
+          </p>
+        </td>
 
-                    <section id="skills">
-                        <h3>Skills</h3>
-                        <ul>
-                            <li>Programming: Python, Java</li>
-                            <li>Web Development: HTML, CSS, JavaScript</li>
-                            <li>Cybersecurity Tools: Wireshark</li>
-                            <li>Other: Teamwork, Communication, Problem-Solving</li>
-                        </ul>
-                    </section>
+        <td colspan="2">
+          <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+              I am an ambitious undergraduate student majoring in Cybersecurity Engineering at Abu Dhabi University. 
+              My passion lies in protecting systems from cyber threats and learning about ethical hacking.
+            </p>
+          </section>
 
-                    <section id="projects">
-                        <h3>Projects</h3>
-                        <ul>
-                            <li>
-                                <b>Encryption Java Code:</b> Developed a Java program to encrypt text.
-                                <a href="assets/FinalProject.java">View Project</a>
-                            </li>
-                        </ul>
-                    </section>
+          <section id="education">
+            <h3>Education</h3>
+            <ul>
+              <li><b>Abu Dhabi University:</b> B.Sc. Cybersecurity Engineering (2023 - Present)</li>
+              <li><b>Applied Technology High School:</b> High School Diploma in Innovation and Engineering (2023)</li>
+            </ul>
+          </section>
 
-                    <section id="certifications">
-                        <h3>Certifications</h3>
-                        <ul>
-                            <li><b>Introduction to Cybersecurity by Cisco</b> - Earned May 28, 2024</li>
-                        </ul>
-                    </section>
+          <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>Programming Languages: Python, Java</li>
+              <li>Web Development: HTML, CSS, JavaScript</li>
+              <li>Cybersecurity Tools: Wireshark</li>
+            </ul>
+          </section>
 
-                    <!-- Contact Form -->
-                    <section id="contact">
-                        <h3>Contact Me</h3>
-                        <form id="contactForm">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                            
-                            <button type="submit">Send</button>
-                        </form>
-                        <p id="formMessage"></p> <!-- Message after submission -->
-                    </section>
-                </td>
-            </tr>
-        </table>
-    </div>
+          <section id="projects">
+            <h3>Projects</h3>
+            <ul>
+              <li>
+                <b>Encryption Java Code:</b> Developed a Java program to encrypt text using custom algorithms.
+                <a href="assets/FinalProject.java">View Project Code</a>
+              </li>
+            </ul>
+          </section>
+
+          <section id="certifications">
+            <h3>Certifications</h3>
+            <ul>
+              <li><b>Introduction to Cybersecurity by Cisco:</b> Earned May 28, 2024</li>
+            </ul>
+          </section>
+
+          <section id="contact">
+            <h3>Contact Me</h3>
+            <form id="contact-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea><br>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </section>
+        </td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>
