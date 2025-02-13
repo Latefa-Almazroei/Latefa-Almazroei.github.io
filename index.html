@@ -2,110 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="name" content="latefa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script >
-    window.onload = function() {
-    
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    document.getElementById("formMessage").innerText = "Message sent successfully!";
-    this.reset();
-});
-
-    </script>
+   
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById("form").addEventListener("submit", function (event) {
+              event.preventDefault();
+  
+              let name = document.getElementById("name").value.trim();
+              let email = document.getElementById("email").value.trim();
+              let message = document.getElementById("message").value.trim();
+              let formMessage = document.getElementById("formMes");
+  
+              if (name === "" || email === "" || message === "") {
+                  formMessage.style.color = "red";
+                  formMessage.textContent = "Please fill out all fields.";
+                  return;
+              }
+  
+              formMessage.style.color = "green";
+              formMessage.textContent = "Message was sent successfully!";
+              this.reset();
+          });
+      });
+  </script>
+  
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
     <header>
-      <h1>My Cybersecurity Portfolio</h1>
+        <h1>My Cybersecurity Portfolio</h1>
     </header>
 
     <table>
-      <tr>
-        <td class="profile">
-          <img src="https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAHaHa?rs=1&pid=ImgDetMain" 
-               alt="Profile Picture" height="100px" weight="100" class="profilepic"><br><br>
-          <p>
-            <b>E-mail:</b> 1093635@students.adu.ac.ae <br>
-            <b>Tel:</b> (+971) 50 0000000 <br>
-            <b>University:</b> <a href="https://www.adu.ac.ae/" target="_blank">Abu Dhabi University</a><br>
-          </p>
-          <p>
-            <a href="github/assets/Sample CV for a Cybersecurity Specialist.pdf" class="btn">View My CV</a><br><br>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
-            </a>
-            <a href="https://github.com/" target="_blank">
-              <img src="assets/github.png" alt="GitHub" class="icon">
-            </a>
-          </p>
-        </td>
+        <tr>
+            <td class="profile">
+                <img src="https://th.bing.com/th/id/OIP.hmLglIuAaL31MXNFuTGBgAHaHa?rs=1&pid=ImgDetMain"
+                     alt="Profile Picture" class="profilepic">
+                <p>
+                    <b>Email:</b> 1093635@students.adu.ac.ae <br>
+                    <b>Tel:</b> (+971) 50 0000000 <br>
+                    <b>University:</b> <a href="https://www.adu.ac.ae/" target="_blank">Abu Dhabi University</a><br>
+                </p>
+                <p>
+                    <a href="github/assets/Sample CV for a Cybersecurity Specialist.pdf" class="btn">View My CV</a><br><br>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <img src="assets/github.png" alt="GitHub" class="icon">
+                    </a>
+                </p>
+            </td>
 
-        <td colspan="2">
-          <section id="about-me">
-            <h2>About Me</h2>
-            <p>
-              I am an ambitious undergraduate student majoring in Cybersecurity Engineering at Abu Dhabi University. 
-              My passion lies in protecting systems from cyber threats and learning about ethical hacking.
-            </p>
-          </section>
+            <td colspan="2">
+              <section>
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I am an ambitious undergraduate student majoring in Cybersecurity Engineering at Abu Dhabi University.
+                        My passion lies in protecting systems from cyber threats and learning about ethical hacking.
+                    </p>
+                </section>
 
-          <section id="education">
-            <h3>Education</h3>
-            <ul>
-              <li><b>Abu Dhabi University:</b> B.Sc. Cybersecurity Engineering (2023 - Present)</li>
-              <li><b>Applied Technology High School:</b> High School Diploma in Innovation and Engineering (2023)</li>
-            </ul>
-          </section>
+                <section id="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><b>Abu Dhabi University:</b> B.Sc. Cybersecurity Engineering (2023 - Present)</li>
+                        <li><b>Applied Technology High School:</b> High School Diploma in Innovation and Engineering (2023)</li>
+                    </ul>
+                </section>
 
-          <section id="skills">
-            <h3>Skills</h3>
-            <ul>
-              <li>Programming Languages: Python, Java</li>
-              <li>Web Development: HTML, CSS, JavaScript</li>
-              <li>Cybersecurity Tools: Wireshark</li>
-            </ul>
-          </section>
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Programming Languages: Python, Java</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>
+                        <li>Cybersecurity Tools: Wireshark</li>
+                    </ul>
+                </section>
 
-          <section id="projects">
-            <h3>Projects</h3>
-            <ul>
-              <li>
-                <b>Encryption Java Code:</b> Developed a Java program to encrypt text using custom algorithms.
-                <a href="assets/FinalProject.java">View Project Code</a>
-              </li>
-            </ul>
-          </section>
+                <section id="projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>
+                            <b>Encryption Java Code:</b> Developed a Java program to encrypt text using custom algorithms.
+                            <a href="assets/FinalProject.java">View Project Code</a>
+                        </li>
+                    </ul>
+                </section>
 
-          <section id="certifications">
-            <h3>Certifications</h3>
-            <ul>
-              <li><b>Introduction to Cybersecurity by Cisco:</b> Earned May 28, 2024</li>
-            </ul>
-          </section>
+                <section id="certifications">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><b>Introduction to Cybersecurity by Cisco:</b> Earned May 28, 2024</li>
+                    </ul>
+                </section>
+              </section>
+                <section id="contact">
+                    <h3>Contact Me</h3>
+                    <form id="form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-          <section id="contact">
-            <h3>Contact Me</h3>
-            <form id="contactform">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
 
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea><br>
-
-              <button type="submit" class="btn">Send Message</button>
-            </form>
-          </section>
-        </td>
-      </tr>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <p id="formMes" style="color: green;"></p>
+                </section>
+            </td>
+        </tr>
     </table>
-  </div>
+</div>
+
+
 
 </body>
 </html>
