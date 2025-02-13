@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script >
     window.onload = function() {
-    let greetingText = document.getElementById("greeting");
-    let hours = new Date().getHours();
-    if (hours < 12) {
-        greetingText.innerText = "Good morning! Welcome to my portfolio.";
-    } else if (hours < 18) {
-        greetingText.innerText = "Good afternoon! Welcome to my portfolio.";
-    } else {
-        greetingText.innerText = "Good evening! Welcome to my portfolio.";
-    }
-};
-
-
+    
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
     document.getElementById("formMessage").innerText = "Message sent successfully!";
@@ -102,7 +91,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
             <h3>Contact Me</h3>
             <form id="contactform">
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required><br>
+              <input type="text" id="name" name="name" required><br><br><br>
 
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required><br>
