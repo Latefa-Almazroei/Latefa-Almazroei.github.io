@@ -1,108 +1,130 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  padding: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            max-width: 900px;
+           
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
 
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-td {
-  padding: 20px;
-  vertical-align: top;
-}
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
 
+        .profile {
+            width: 30%;
+            text-align: center;
+            background-color: #e0ecf8;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-.profile {
-  width: 30%;
-  text-align: center;
-  background-color: #e0ecf8;
-}
+        .profilepic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
 
-.profilepic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  margin: 5px;
-}
+        .btn {
+            display: inline-block;
+            background-color: #26435c;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
+        .btn:hover {
+            background-color: #4376b1;
+            transform: scale(1.1);
+        }
 
-.btn {
-  display: inline-block;
-  background-color: #335c7f;
-  color: white;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+        section {
+            background-color: #f6f9fc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
 
-.btn:hover {
-  background-color: #233d5b;
-transform: scale(1.2);
-}
+        h2, h3 {
+            color: #205a8c;
+            margin-bottom: 10px;
+        }
 
+       
+        #contactform {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+           
+        }
 
-section {
-  background-color: #f6f9fc;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
+        #form label,
+        #form input,
+        #form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #a07575;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-h2, h3 {
-  color: #335c7f;
-  margin-bottom: 10px;
-}
+        #form textarea {
+            height: 100px;
+            resize: none;
+        }
 
+        #form button {
+            background-color: #335c7f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
 
-#contactform {
-  display: flex;
- text-align:center;
-}
+        #form button:hover {
+            background-color: #233d5b;
+            transform: scale(1.1);
+        }
 
-
-
-#contactform button {
-  background-color: #335c7f;
-  color: white;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  
-}
-
-
-
-#contactform button:hover {
-  background-color: #233d5b;
-  transform: scale(1.2);
-}
+        #formMes {
+            margin-top: 10px;
+            font-weight: bold;
+        }
