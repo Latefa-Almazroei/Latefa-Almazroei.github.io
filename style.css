@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -36,14 +36,14 @@ td {
   vertical-align: top;
 }
 
-/* Profile Section */
+
 .profile {
   width: 30%;
   text-align: center;
   background-color: #e0ecf8;
 }
 
-.profile-pic {
+.profilepic {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -55,7 +55,7 @@ td {
   margin: 5px;
 }
 
-/* Buttons */
+
 .btn {
   display: inline-block;
   background-color: #335c7f;
@@ -67,9 +67,10 @@ td {
 
 .btn:hover {
   background-color: #233d5b;
+  transform:rotate(5 deg);
 }
 
-/* Sections */
+
 section {
   background-color: #f6f9fc;
   padding: 15px;
@@ -82,14 +83,14 @@ h2, h3 {
   margin-bottom: 10px;
 }
 
-/* Form */
-#contact-form {
+
+#contactform {
   display: flex;
-  flex-direction: column;
+ text-align:center;
 }
 
-#contact-form input,
-#contact-form textarea {
+#contactform input,
+#contactform textarea {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -98,15 +99,16 @@ h2, h3 {
   border-radius: 5px;
 }
 
-#contact-form button {
+#contactform button {
   background-color: #335c7f;
   color: white;
   padding: 8px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  
 }
 
-#contact-form button:hover {
+#contactform button:hover {
   background-color: #233d5b;
+  transform:scale(1.2);
 }
